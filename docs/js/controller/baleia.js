@@ -1,3 +1,3 @@
-$('#title').text('Baleia').attr('class', 'brand-logo white-text center');
-$('#hamburguer').attr('class', 'sidenav-trigger brand-logo white-text left');
-$('.nav-wrapper').attr('class', 'nav-wrapper grey darken-4');
+$('#title').text('Baleia');
+$('.nav-wrapper').attr('style', 'background-color: #212121 !important; color: #fff !important;');
+$('head meta[name=theme-color]').attr('content', '#212121');

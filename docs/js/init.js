@@ -1,5 +1,5 @@
-let instance = new M.Sidenav(document.querySelector('.sidenav'));
-let $content = $('#content');
+let instance 	= new M.Sidenav(document.querySelector('.sidenav'));
+let $content 	= $('#content');
 
 FastClick.attach(document.body);
 

@@ -1,22 +1,36 @@
 <!doctype html>
-<html lang="pt-br" Xmanifest="appcache.manifest">
+<html lang="pt-br" Xmanifest="manifest/appcache.manifest">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="description" content="WebApp de exemplo">
+		<meta name="description" content="Apresentação do Polo Sul">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="img/icon.png">
+		<meta name="theme-color" content="">
+		
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="Shopping">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="apple-touch-icon-precomposed" href="img/icon.png">
+		
 		<title>Polo Sul</title>
 		
+		<link rel="manifest" href="manifest/manifest.json">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 
 	<body>
 		<!-- NAVBAR -->
 		<nav>
-			<div class="nav-wrapper white" style="padding: 0 10px;">
-				<a id="hamburguer" href="#" data-target="slide-out" class="sidenav-trigger brand-logo blue-text left" style="position: relative;"><i class="material-icons">menu</i></a>
-				<a id="title" href="home" class="brand-logo blue-text center" style="white-space: nowrap;">Polo Sul</a>
+			<div class="nav-wrapper white">
+				<a id="hamburguer" href="#" data-target="slide-out" class="sidenav-trigger brand-logo left" style="position: relative;"><i class="material-icons">menu</i></a>
+				<a id="title" href="home" class="brand-logo center" style="white-space: nowrap;"></a>
 			</div>
 		</nav>
 	
