@@ -2,10 +2,18 @@ CACHE MANIFEST
 
 CACHE:
 ./index.html
+./view/home.html
+./view/pinguim.html
+./view/baleia.html
+./view/krill.html
 ./img/polo-sul.jpg
 ./img/baleia.jpg
 ./img/pinguim.jpg
+./js/init.js
+./js/fastclick.js
+./css/style.js
 ./img/krill.jpg
+./manifest/manifest.json
 
 NETWORK:
 *
