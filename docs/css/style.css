@@ -3,3 +3,11 @@
 	transition: background-color .2s, color .2s;
 	-webkit-transition: background-color .2s, color .2s; /* Safari */
 }
+
+.parallax-container {
+	height: 200px;
+}
+
+nav .brand-logo {
+	color: inherit;
+}

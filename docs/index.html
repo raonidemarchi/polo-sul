@@ -27,12 +27,14 @@
 
 	<body>
 		<!-- NAVBAR -->
-		<nav>
-			<div class="nav-wrapper white">
-				<a id="hamburguer" href="#" data-target="slide-out" class="sidenav-trigger brand-logo left" style="position: relative;"><i class="material-icons">menu</i></a>
-				<a id="title" href="home" class="brand-logo center" style="white-space: nowrap;"></a>
-			</div>
-		</nav>
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper white">
+					<a id="hamburguer" href="#" data-target="slide-out" class="sidenav-trigger brand-logo left" style="position: relative;"><i class="material-icons">menu</i></a>
+					<a id="title" href="home" class="brand-logo center" style="white-space: nowrap;"></a>
+				</div>
+			</nav>
+		</div>
 	
 		<!-- SIDENAV -->
 		<ul id="slide-out" class="sidenav">
@@ -54,7 +56,11 @@
 			<li><a class="waves-effect" href="krill">Krill</a></li>
 		</ul>
         
-		<!-- CONTEÚDO -->
+		<!-- CONTEÚDO -->	
+		<div class="parallax-container">
+			<div id="teste" class="parallax"><img src=""></div>
+		</div>
+		
 		<div id="content" style="padding: 12px 19px 0;"></div>
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>

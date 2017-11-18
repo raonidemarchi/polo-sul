@@ -1,12 +1,14 @@
-let instance 	= new M.Sidenav(document.querySelector('.sidenav'));
+let parallax	= new M.Parallax(document.querySelector('.parallax'));
+let sidenav 	= new M.Sidenav(document.querySelector('.sidenav'));
 let $content 	= $('#content');
 
 FastClick.attach(document.body);
 
+// SPA
 $('a').click(function(e) {
 	e.preventDefault();
 	
-	instance.close();
+	sidenav.close();
 	
 	let href = $(this).attr('href');
 	
@@ -21,8 +23,6 @@ $('a').click(function(e) {
 			$content.html(data);
 		}
 	});
-	
-	$.getScript('js/controller/' + href + '.js');
 });
 
 $('.sidenav > li:nth-child(2) > a').click();
