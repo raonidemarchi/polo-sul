@@ -5,7 +5,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="description" content="WebApp de exemplo">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Pólo Sul</title>
+		<title>Polo Sul</title>
 		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -14,9 +14,9 @@
 	<body>
 		<!-- NAVBAR -->
 		<nav>
-			<div class="nav-wrapper white" style="padding: 0 20px;">
-				<a href="#" data-target="slide-out" class="sidenav-trigger brand-logo blue-text left" style="position: relative !important;"><i class="material-icons">menu</i></a>
-				<a href="#" class="brand-logo blue-text center" style="white-space: nowrap; ">Pólo Sul</a>
+			<div class="nav-wrapper white" style="padding: 0 10px;">
+				<a id="hamburguer" href="#" data-target="slide-out" class="sidenav-trigger brand-logo blue-text left" style="position: relative;"><i class="material-icons">menu</i></a>
+				<a id="title" href="home" class="brand-logo blue-text center" style="white-space: nowrap;">Polo Sul</a>
 			</div>
 		</nav>
 	
@@ -25,28 +25,27 @@
 			<li>
 				<div class="user-view">
 					<div class="background">
-						<img src="https://i.ytimg.com/vi/mkq5CjLQFLk/maxresdefault.jpg">
+						<img src="http://next.materializecss.com/images/office.jpg">
 					</div>
 					
-					<a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-					<a href="#!name"><span class="white-text name">John Doe</span></a>
-					<a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+					<a href="home"><img class="circle" src="http://next.materializecss.com/images/yuna.jpg"></a>
+					<a href="home"><span class="white-text name">John Doe</span></a>
+					<a href="home"><span class="white-text email">jdandturk@gmail.com</span></a>
 				</div>
 			</li>
 			
-			<li><a class="waves-effect" href="view/home.html">Home</a></li>
-			<li><a class="waves-effect" href="view/pinguim.html">Pinguim</a></li>
-			<li><a class="waves-effect" href="#!">Baleia</a></li>
-			<li><a class="waves-effect" href="#!">Krill</a></li>
+			<li><a class="waves-effect" href="home">Home</a></li>
+			<li><a class="waves-effect" href="pinguim">Pinguim</a></li>
+			<li><a class="waves-effect" href="baleia">Baleia</a></li>
+			<li><a class="waves-effect" href="krill">Krill</a></li>
 		</ul>
         
 		<!-- CONTEÚDO -->
-		<div class="container"></div>
-				
+		<div id="content" style="padding: 12px 19px 0;"></div>
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-				
+		<script src="js/fastclick.js"></script>
 		<script src="js/init.js"></script>
-		<script src="js/spa.js"></script>
 	</body>
 </html>
