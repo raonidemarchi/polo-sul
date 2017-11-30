@@ -6,8 +6,29 @@
 
 .parallax-container {
 	height: 200px;
+	margin-top: 48px;
 }
 
-nav .brand-logo {
-	color: inherit;
+nav .brand-logo, nav .tabs .tab a {
+	color: inherit !important;
+}
+
+.navbar-fixed {
+	transition: top .2s;
+	-webkit-transition: top .2s; /* Safari */
+}
+
+.fixed-img {
+	width: 52px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0;
+}
+
+.fixed-text {
+	width: calc(100% - 70px);
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0;
+	padding-left: 16px;
 }

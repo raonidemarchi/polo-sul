@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br" Xmanifest="manifest/appcache.manifest">
+<html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,18 +8,15 @@
 		
 		<!-- Add to homescreen for Chrome on Android -->
 		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="icon" sizes="192x192" href="img/icon.png">
 		<meta name="theme-color" content="">
 		
 		<!-- Add to homescreen for Safari on iOS -->
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-title" content="Shopping">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<link rel="apple-touch-icon-precomposed" href="img/icon.png">
 		
 		<title>Polo Sul</title>
 		
-		<link rel="manifest" href="manifest/manifest.json">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="css/style.css">
@@ -27,11 +24,19 @@
 
 	<body>
 		<!-- NAVBAR -->
-		<div class="navbar-fixed">
-			<nav>
+		<div class="navbar-fixed" style="top: 0;">
+			<nav class="nav-extended white">
 				<div class="nav-wrapper white">
 					<a id="hamburguer" href="#" data-target="slide-out" class="sidenav-trigger brand-logo left" style="position: relative;"><i class="material-icons">menu</i></a>
-					<a id="title" href="home" class="brand-logo center" style="white-space: nowrap;"></a>
+					<a id="title" href="#" class="brand-logo center" style="white-space: nowrap;"></a>
+				</div>
+				
+				<div class="nav-content">
+					<ul class="tabs tabs-transparent white">
+						<li class="tab"><a href="#tab1">Anatomia</a></li>
+						<li class="tab"><a href="#tab2">Comportamento</a></li>
+						<li class="tab"><a href="#tab3">Fisiologia</a></li>
+					</ul>
 				</div>
 			</nav>
 		</div>
@@ -40,28 +45,25 @@
 		<ul id="slide-out" class="sidenav">
 			<li>
 				<div class="user-view">
-					<div class="background">
-						<img src="http://next.materializecss.com/images/office.jpg">
+					<div class="background" style="top: -56px;">
+						<img src="img/polo-sul.jpg">
 					</div>
 					
-					<a href="home"><img class="circle" src="http://next.materializecss.com/images/yuna.jpg"></a>
-					<a href="home"><span class="white-text name">John Doe</span></a>
-					<a href="home"><span class="white-text email">jdandturk@gmail.com</span></a>
+					<a href="home"><img class="circle" src="img/icon.jpg"></a>
+					<br>
 				</div>
 			</li>
 			
-			<li><a class="waves-effect" href="home">Home</a></li>
-			<li><a class="waves-effect" href="pinguim">Pinguim</a></li>
-			<li><a class="waves-effect" href="baleia">Baleia</a></li>
+			<li><a class="waves-effect" href="home">Início</a></li>
+			<li><a class="waves-effect" href="imperador">Pinguim Imperador</a></li>
+			<li><a class="waves-effect" href="adelia">Pinguim-de-adélia</a></li>
+			<li><a class="waves-effect" href="foca">Foca-de-weddell</a></li>
 			<li><a class="waves-effect" href="krill">Krill</a></li>
+			<li><a class="waves-effect" href="baleia">Baleia Azul</a></li>
 		</ul>
         
-		<!-- CONTEÚDO -->	
-		<div class="parallax-container">
-			<div id="teste" class="parallax"><img src=""></div>
-		</div>
-		
-		<div id="content" style="padding: 12px 19px 0;"></div>
+		<!-- CONTEÚDO -->
+		<div id="content" style="padding: 68px 19px 0;"></div>
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

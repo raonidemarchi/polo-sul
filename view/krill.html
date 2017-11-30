@@ -1,14 +1,50 @@
-<p style="text-align: justify; text-justify: inter-word;">
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac ex commodo erat semper auctor ut in nibh. Maecenas nec blandit justo, sit amet egestas neque. Ut turpis quam, mollis in luctus nec, convallis in lacus. Phasellus vehicula ipsum felis, non suscipit lectus accumsan consectetur. Nulla pulvinar vehicula sapien, ut tempus sem consequat nec. Sed metus quam, mattis et eros sodales, lobortis sagittis tellus. Praesent vitae lectus elit. Maecenas vitae est quis risus aliquet feugiat.
-</p>
+<div id="tab1" class="col s12">
+	<h5 style="margin-top: 0;">Rede de filtragem ou "cesto" muito fino</h5>
+	<p>Formado por 6-8 membros, que podem capturar fitoplânctons menores que 1µm, os menores que existem.</p>
+	<img class="responsive-img" src="img/189233-004-8139E677.jpg">
+	
+	<br><br>
+	
+	<h5>Órgãos pequenos e bioluminescentes</h5>
+	<p>Que são encontrados em várias partes do corpo do Krill. Eles possuem um refletor atrás, e uma lente na frente, que podem ser redirecionados usando músculos: sua função ainda não é conhecida, mas pode ser algo conectado com enxames ou reprodução. Por isso, krills são muitas vezes chamados de "camarões de luz".</p>
+	<img class="responsive-img" src="img/krill-intro.jpg">
+	
+	<br><br>
+</div>
 
-<p style="text-align: justify; text-justify: inter-word;">
-	Sed tempus neque sapien, eu pharetra libero sollicitudin scelerisque. Ut efficitur tellus purus, eget ullamcorper dui eleifend quis. Nunc eget egestas enim. Nunc volutpat, velit convallis semper vulputate, justo eros volutpat lorem, at venenatis ex arcu sed neque. Morbi placerat nibh id dui fermentum luctus. Proin volutpat arcu elit, et porta massa venenatis non. Nulla facilisi. Quisque lectus dui, lacinia eget nunc quis, volutpat cursus lectus. Donec vehicula sodales enim, ut suscipit diam finibus sed.
-</p>
+<div id="tab2" class="col s12">
+	<h5 style="margin-top: 0;">Comportamento em grupo</h5>
+	<p>É similar ao de cardumes de peixes pequenos, como uma forma de defesa de predadores; os enxames podem chegar de 10 a 30 mil indivíduos por metro cúbico.</p>
+	<img class="responsive-img" src="img/Krill_Coronado.jpg">
+	
+	<br><br>
+	
+	<h5>No inverno e na primavera</h5>
+	<p>São encontrados embaixo do gelo, onde se alimentam de algas, se alimentando de uma maneira peculiar, parecida com um cortador de grama.</p>
+	<img class="responsive-img" src="img/1230586.jpg">
+	
+	<br><br>
+</div>
+
+<div id="tab3" class="col s12">
+	<h5 style="margin-top: 0;">Podem aguentar grandes períodos sem comida</h5>
+	<p>Cerca de 200 dias, utilizando seus músculos como reserva. O Krill encolhe no processo - o que acontece geralmente no nos meses de inverno quando não há fotossíntese embaixo do gelo marítimo.</p>
+	<img class="responsive-img" src="img/antarctic (3).jpg">
+	
+	<br><br>
+	
+	<h5>As fêmeas podem pôr cerca de 10 mil ovos de uma vez</h5>
+	<p>Podendo fazê-lo várias vezes na mesma estação.</p>
+	<img class="responsive-img" src="img/krill-swarm.jpg">
+	
+	<br><br>
+</div>
 
 <script>
-	$('.parallax img').attr('src', 'img/krill.jpg');
+	new M.Tabs(document.querySelector('.tabs')).select('tab1');
+	
 	$('#title').text('Krill');
-	$('.nav-wrapper').attr('style', 'background-color: #F44336 !important; color: #fff !important;');
-	$('head meta[name=theme-color]').attr('content', '#F44336');
+	$('.nav-wrapper, .tabs').attr('style', 'background-color: #FF8A65 !important; color: rgba(0,0,0,.87) !important;');
+	$('.indicator').attr('style', 'background-color: rgba(0,0,0,.87);');
+	$('head meta[name=theme-color]').attr('content', '#FF8A65');
 </script>
